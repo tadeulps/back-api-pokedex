@@ -14,6 +14,8 @@ app.use(express.json());
 
 app.post("/sign-up", userController.signUp);
 
+app.post("/sign-in", userController.signIn);
+
 export async function init () {
   await connectDatabase();
 }
